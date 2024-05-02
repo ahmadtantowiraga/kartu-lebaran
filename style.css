@@ -1,0 +1,31 @@
+.container {
+  background-color: #ffff9d;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  transform: rotate(45deg);
+  margin-bottom: 60px;
+}
+.box:nth-child(odd) {
+  background-color: #0aa30a;
+  width: 50px;
+  height: 50px;
+}
+.box:nth-child(even) {
+  width: 50px;
+  height: 50px;
+  background-color: #73bd20;
+}
+.text {
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
